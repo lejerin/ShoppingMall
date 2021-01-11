@@ -1,4 +1,18 @@
 package parayo.domain.user
 
-class User {
+import java.util.*
+import javax.persistence.*
+
+@Entity(name = "user")
+class User (
+    var email: String,
+    var password: String,
+    var name: String
+){
+
+    @Id
+    @GeneratedValue()
+
+
+
 }
